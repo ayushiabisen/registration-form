@@ -1,0 +1,194 @@
+html,body{
+    background-color: burlywood;
+}
+      * {     
+        box-sizing: border-box;
+      }       
+     
+      input[type=text], select, textarea {
+        width: 50%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        resize: vertical;
+      }
+      
+      label {
+        padding: 12px 12px 12px 0;
+        display: inline-block;
+      }
+      
+      input[type=submit] {
+        background-color: #04AA6D;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        float: left;
+      }
+      
+      input[type=submit]:hover {
+        background-color: #45a049;
+      }
+      
+      .container {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+      }
+      
+      .col-25 {
+        float: left;
+        width: 25%;
+        margin-top: 6px;
+      }
+      
+      .col-75 {
+        float: left;
+        width: 75%;
+        margin-top: 6px;
+      }
+      
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      .signin {
+          background-color:rgb(1, 14, 1);
+          color: white;
+          padding: 10px 20px;
+          border: thick;
+          border-radius:10px;
+          cursor: pointer;
+          float: middle;
+          width: 20%;
+          margin-top: middle;
+              }
+
+/* The popup form - hidden by default */
+.form-popup {
+
+              display: none;
+              position: fixed;
+              bottom: 0;
+              right: 15px;
+              border: 3px solid #f1f1f1;
+              z-index: 15;
+            }
+
+/* Add styles to the form container */
+.form-container {
+                  max-width: 400px;
+                  padding: 20px;
+                  background-color: white;
+                  }
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+                  width: 100%;
+                  padding: 15px;
+                  margin: 5px 0 30px 0;
+                  border: none;
+                  background: #f1f1f1;
+
+                  }
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+                  background-color: rgb(233, 227, 227);
+                  outline: none;
+                    }
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+                  background-color: #04AA6D;
+                  color: white;
+                  padding: 16px 20px;
+                  border: none;
+                  cursor: pointer;
+                  width: 100%;
+                  margin-bottom:10px;
+                  opacity: 0.8;
+                   }
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+                          background-color: red;
+                        }
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+                          opacity: 1;
+                         }
+
+.imgcontainer {
+                          text-align: center;
+                          margin: 24px 0 12px 0;
+                }
+
+img.avatar {
+            width: 40%;
+            border-radius: 30%;
+            }
+
+.fa {
+            padding: 10px;
+            font-size: 20px;
+            width: 50px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+            border-radius: 40%;
+            }
+
+.formerror {
+  color: red;
+}
+
+.fa-facebook {
+background: #3B5998;
+color: white;
+}
+
+.fa-twitter {
+background: #55ACEE;
+color: white;
+}
+
+.fa-google {
+background: #dd4b39;
+color: white;
+}
+
+.fa-linkedin {
+background: #007bb5;
+color: white;
+}
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  left: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: red; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 15px; /* Increase font size */
+}
+
+      /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 100px) {
+        .col-25, .col-50, input[type=submit] {
+          width: 100%;
+          margin-top: 0;
+        }
+      }
+
